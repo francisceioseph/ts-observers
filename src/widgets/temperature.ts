@@ -1,5 +1,5 @@
 import { IObservable, IObserver } from '../interfaces/observer';
-import { WheaterData } from '../models/wheterData';
+import { WeatherData } from '../models/weatherData';
 
 export class TemperatureWidget implements IObserver {
   _observer: IObservable;
@@ -10,7 +10,7 @@ export class TemperatureWidget implements IObserver {
   }
 
   update = (observable: IObservable, _args?: any) => {
-    const wheaterObservable: WheaterData = observable as WheaterData;
+    const wheaterObservable: WeatherData = observable as WeatherData;
 
     this._temperature = wheaterObservable.temperature;
     this.render();

@@ -1,6 +1,6 @@
 import { IObservable, IObserver } from '../interfaces/observer';
 
-export class WheaterData implements IObservable {
+export class WeatherData implements IObservable {
   _changed: boolean = false;
   _observers: IObserver[] = [];
 
@@ -17,7 +17,7 @@ export class WheaterData implements IObservable {
   };
 
   setChanged = (changed: boolean) => {
-    this._changed = true;
+    this._changed = changed;
   };
 
   notify = (args?: any) => {

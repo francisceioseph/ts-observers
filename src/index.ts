@@ -1,7 +1,7 @@
 import { TemperatureWidget } from './widgets/temperature';
-import { WheaterData } from './models/wheterData';
+import { WeatherData } from './models/weatherData';
 
-const wheatherData = new WheaterData();
+const wheatherData = new WeatherData();
 const tempWidget = new TemperatureWidget(wheatherData);
 
 wheatherData.subscribe(tempWidget);

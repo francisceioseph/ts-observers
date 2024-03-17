@@ -1,0 +1,20 @@
+{
+  "name": "ts-observables",
+  "version": "1.0.0",
+  "description": "a simple example of the observable design pattern",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "observables",
+    "typescript"
+  ],
+  "author": "Francisco Souza",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.2"
+  }
+}
